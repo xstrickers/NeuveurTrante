@@ -1,32 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\",
+  "WorkspaceRootPath": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|solutionrelative:NeuveurTrante\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|solutionrelative:NeuveurTrante\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
       "RelativeMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|solutionrelative:NeuveurTrante\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\LoadOAL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\WinformCplusplus\\WinformCplusplus\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WinformCplusplus\\WinformCplusplus\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\WinformCplusplus\\WinformCplusplus\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WinformCplusplus\\WinformCplusplus\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\LoadOAL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|solutionrelative:NeuveurTrante\\framework\\Win32\\LoadOAL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\Framework.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\Framework.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E90B06A9-FF63-4D1F-BF35-B8B6C18D9AAE}|NeuveurTrante\\NeuveurTrante.vcxproj|solutionrelative:NeuveurTrante\\framework\\Win32\\Framework.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Etudiant1\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Etudiant1\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,35 +42,37 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Player.h",
-              "DocumentMoniker": "C:\\Users\\Etudiant1\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.h",
-              "ToolTip": "C:\\Users\\Etudiant1\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.h",
-              "RelativeToolTip": "..\\..\\..\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-26T16:04:42.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\Etudiant1\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.cpp",
-              "ToolTip": "C:\\Users\\Etudiant1\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.cpp",
-              "RelativeToolTip": "..\\..\\..\\Downloads\\WinformCplusplus\\WinformCplusplus\\Player.cpp",
-              "ViewState": "AQIAAAoAAAAAAAAAAABBwBwAAAAAAAAA",
+              "DocumentMoniker": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\WinformCplusplus\\WinformCplusplus\\Player.cpp",
+              "RelativeDocumentMoniker": "WinformCplusplus\\WinformCplusplus\\Player.cpp",
+              "ToolTip": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\WinformCplusplus\\WinformCplusplus\\Player.cpp",
+              "RelativeToolTip": "WinformCplusplus\\WinformCplusplus\\Player.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-26T16:04:39.715Z"
+              "WhenOpened": "2024-11-26T20:18:24.535Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Player.h",
+              "DocumentMoniker": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\WinformCplusplus\\WinformCplusplus\\Player.h",
+              "RelativeDocumentMoniker": "WinformCplusplus\\WinformCplusplus\\Player.h",
+              "ToolTip": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\WinformCplusplus\\WinformCplusplus\\Player.h",
+              "RelativeToolTip": "WinformCplusplus\\WinformCplusplus\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-26T20:18:16.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Framework.cpp",
-              "DocumentMoniker": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\Framework.cpp",
+              "DocumentMoniker": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\Framework.cpp",
               "RelativeDocumentMoniker": "NeuveurTrante\\framework\\Win32\\Framework.cpp",
-              "ToolTip": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\Framework.cpp",
+              "ToolTip": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\Framework.cpp",
               "RelativeToolTip": "NeuveurTrante\\framework\\Win32\\Framework.cpp",
               "ViewState": "AQIAAGMAAAAAAAAAAIBJwHMAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -76,11 +80,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "LoadOAL.cpp",
-              "DocumentMoniker": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\LoadOAL.cpp",
+              "DocumentMoniker": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\LoadOAL.cpp",
               "RelativeDocumentMoniker": "NeuveurTrante\\framework\\Win32\\LoadOAL.cpp",
-              "ToolTip": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\LoadOAL.cpp",
+              "ToolTip": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\framework\\Win32\\LoadOAL.cpp",
               "RelativeToolTip": "NeuveurTrante\\framework\\Win32\\LoadOAL.cpp",
               "ViewState": "AQIAABsAAAAAAAAAAIBJwCkAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -90,34 +94,36 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MyForm.h [Design]",
-              "DocumentMoniker": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\MyForm.h",
+              "DocumentMoniker": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\MyForm.h",
               "RelativeDocumentMoniker": "NeuveurTrante\\MyForm.h",
-              "ToolTip": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\MyForm.h [Design]",
+              "ToolTip": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\MyForm.h [Design]",
               "RelativeToolTip": "NeuveurTrante\\MyForm.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-26T13:52:40.246Z"
+              "WhenOpened": "2024-11-26T13:52:40.246Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MyForm.h",
-              "DocumentMoniker": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\MyForm.h",
+              "DocumentMoniker": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\MyForm.h",
               "RelativeDocumentMoniker": "NeuveurTrante\\MyForm.h",
-              "ToolTip": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\MyForm.h",
+              "ToolTip": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\MyForm.h",
               "RelativeToolTip": "NeuveurTrante\\MyForm.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "ViewState": "AgIAACUAAAAAAAAAAAAhwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-26T14:24:23.496Z"
+              "WhenOpened": "2024-11-26T14:24:23.496Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MyForm.cpp",
-              "DocumentMoniker": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\MyForm.cpp",
+              "DocumentMoniker": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\MyForm.cpp",
               "RelativeDocumentMoniker": "NeuveurTrante\\MyForm.cpp",
-              "ToolTip": "C:\\Users\\Etudiant1\\Documents\\GitHub\\NeuveurTrante\\NeuveurTrante\\MyForm.cpp",
+              "ToolTip": "D:\\Etudes\\Creajeux\\Quatrieme_Annee\\Eleve\\Tools\\NeuveurTrante\\NeuveurTrante\\MyForm.cpp",
               "RelativeToolTip": "NeuveurTrante\\MyForm.cpp",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAYwFEAAAAkAAAA",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAAJkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-26T13:52:37.929Z",
               "EditorCaption": ""

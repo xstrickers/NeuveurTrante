@@ -2,3 +2,6 @@ C:\Users\Etudiant1\source\repos\NeuveurTrante\NeuveurTrante\Debug\NeuveurTrante.
 C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\Debug\NeuveurTrante.vcxproj.AssemblyReference.cache
 C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\Debug\NeuveurTrante.MyForm.resources
 C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\Debug\NeuveurTrante.vcxproj.GenerateResource.cache
+D:\Etudes\Creajeux\Quatrieme_Annee\Eleve\Tools\NeuveurTrante\NeuveurTrante\Debug\NeuveurTrante.vcxproj.AssemblyReference.cache
+D:\Etudes\Creajeux\Quatrieme_Annee\Eleve\Tools\NeuveurTrante\NeuveurTrante\Debug\NeuveurTrante.MyForm.resources
+D:\Etudes\Creajeux\Quatrieme_Annee\Eleve\Tools\NeuveurTrante\NeuveurTrante\Debug\NeuveurTrante.vcxproj.GenerateResource.cache

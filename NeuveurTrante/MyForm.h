@@ -53,6 +53,7 @@ private:
 	System::Windows::Forms::Button^ savePlaylistButton;
 	System::Windows::Forms::Button^ loadPlaylistButton;
 
+
 private:
 	System::ComponentModel::Container^ components;
 
@@ -129,11 +130,13 @@ private:
 		this->savePlaylistButton->Text = L"Save Playlist";
 		this->savePlaylistButton->Location = System::Drawing::Point(450, 250);
 		this->savePlaylistButton->Size = System::Drawing::Size(100, 30);
+		this->savePlaylistButton->Click += gcnew System::EventHandler(this, &NeuveurTrante::OnSavePlaylist);
 
 		// Load Playlist Button
 		this->loadPlaylistButton->Text = L"Load Playlist";
 		this->loadPlaylistButton->Location = System::Drawing::Point(450, 300);
 		this->loadPlaylistButton->Size = System::Drawing::Size(100, 30);
+		this->loadPlaylistButton->Click += gcnew System::EventHandler(this, &NeuveurTrante::OnLoadPlayList);
 
 		// Adding controls to the form
 		this->Controls->Add(this->playButton);
@@ -162,7 +165,12 @@ private:
 	void OnRemoveFile(System::Object^ sender, System::EventArgs^ e);
 	void OnSavePlaylist(System::Object^ sender, System::EventArgs^ e);
 	void OnLoadPlayList(System::Object^ sender, System::EventArgs^ e);
-	void CleanupOpenAL();
 	
+	//
+	void CleanupOpenAL();
+	bool LoadWavFile(const std::string& filename, ALuint& buffer);
+	//bool LoadOggFile(const std::string& filename, ALuint& buffer);
+	std::string SysStringToStd(System::String^ sysString);
+	bool EndsWith(const std::string& str, const std::string& suffix);
 };
 

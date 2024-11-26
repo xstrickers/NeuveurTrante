@@ -4,12 +4,14 @@
 #include <fstream>
 #include <vector>
 #include <string>
-
+//#include "stb_vorbis.c"
 
 using namespace System;
 using namespace System::Windows::Forms;
 [STAThreadAttribute]
-void Main(array<String^>^ args) {
+
+void Main(array<String^>^ args) 
+{
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 	NeuveurTrante form;
@@ -25,7 +27,8 @@ ALuint buffer;
 float volume = 0.5f;  // Volume initial à 50%
 std::vector<std::string> playlist;
 
-std::string SysStringToStd(System::String^ sysString) {
+std::string NeuveurTrante::SysStringToStd(System::String^ sysString)
+{
 	using namespace System::Runtime::InteropServices;
 	IntPtr ptr = Marshal::StringToHGlobalAnsi(sysString);
 	std::string stdString = static_cast<char*>(ptr.ToPointer());
@@ -34,22 +37,23 @@ std::string SysStringToStd(System::String^ sysString) {
 }
 
 // Initialisation d'OpenAL
-void InitializeOpenAL() {
-	device = alcOpenDevice(nullptr); // Périphérique par défaut
-	if (!device) {
-		MessageBox::Show("Impossible d'ouvrir le périphérique OpenAL.");
-		return;
-	}
-	context = alcCreateContext(device, nullptr);
-	if (!alcMakeContextCurrent(context)) {
-		MessageBox::Show("Impossible de définir le contexte OpenAL.");
-		return;
-	}
-	alGenSources(1, &source);
-}
+//void InitializeOpenAL() {
+//	device = alcOpenDevice(nullptr); // Périphérique par défaut
+//	if (!device) {
+//		MessageBox::Show("Impossible d'ouvrir le périphérique OpenAL.");
+//		return;
+//	}
+//	context = alcCreateContext(device, nullptr);
+//	if (!alcMakeContextCurrent(context)) {
+//		MessageBox::Show("Impossible de définir le contexte OpenAL.");
+//		return;
+//	}
+//	alGenSources(1, &source);
+//}
 
 // Nettoyage des ressources OpenAL
-void CleanupOpenAL() {
+void CleanupOpenAL() 
+{
 	alDeleteSources(1, &source);
 	alDeleteBuffers(1, &buffer);
 	alcMakeContextCurrent(nullptr);
@@ -58,7 +62,8 @@ void CleanupOpenAL() {
 }
 
 // Charger un fichier WAV dans un buffer OpenAL
-bool LoadWavFile(const std::string& filename, ALuint& buffer) {
+bool NeuveurTrante::LoadWavFile(const std::string& filename, ALuint& buffer) 
+{
 	// Vous devez ajouter la logique pour charger un fichier WAV ici
 	// Ce code est un exemple générique et ne contient pas la logique de chargement du fichier
 	std::ifstream file(filename, std::ios::binary);
@@ -73,109 +78,181 @@ bool LoadWavFile(const std::string& filename, ALuint& buffer) {
 	return true;
 }
 
+// Charger un fichier OGG
+//bool NeuveurTrante::LoadOggFile(const std::string& filename, ALuint& buffer) 
+//{
+//	int channels, sampleRate;
+//	short* output;
+//	int samples = stb_vorbis_decode_filename(filename.c_str(), &channels, &sampleRate, &output);
+//	if (samples < 0) {
+//		return false;
+//	}
+//
+//	alGenBuffers(1, &buffer);
+//	alBufferData(buffer, (channels == 1) ? AL_FORMAT_MONO16 : AL_FORMAT_STEREO16, output,
+//		samples * sizeof(short), sampleRate);
+//	free(output);
+//	return true;
+//}
 
-void NeuveurTrante::OnPlay(System::Object^ sender, System::EventArgs^ e) {
+void NeuveurTrante::OnPlay(System::Object^ sender, System::EventArgs^ e) 
+{
 	std::string filePath;
-	if (playlistBox->SelectedItem) {
+	if (playlistBox->SelectedItem) 
+	{
 		filePath = SysStringToStd(playlistBox->SelectedItem->ToString());
 	}
-	//    // Charger et lire le fichier
-	//    alSourceStop(source);
-	//    alDeleteBuffers(1, &buffer);
 
-	//    if (LoadWavFile(filePath, buffer)) {
-	//        alSourcei(source, AL_BUFFER, buffer);
-	//        alSourcePlay(source);
-	//    }
-	//    else {
-	//        MessageBox::Show("Impossible de charger le fichier audio.");
-	//    }
-	//}
-
-	ALuint      uiBuffer;
-	ALuint      uiSource;
-	ALint       iState;
+	
 
 	// Generate an AL Buffer
-	alGenBuffers(1, &uiBuffer);
+	alGenBuffers(1, &buffer);
 
 	// Load Wave file into OpenAL Buffer
-	if (!ALFWLoadWaveToBuffer(filePath.c_str(), uiBuffer))
+	if (!ALFWLoadWaveToBuffer(filePath.c_str(), buffer))
 	{
 		ALFWprintf("Failed to load %s\n", filePath);
 	}
 
 	// Generate a Source to playback the Buffer
-	alGenSources(1, &uiSource);
+	alGenSources(1, &source);
 
 	// Attach Source to Buffer
-	alSourcei(uiSource, AL_BUFFER, uiBuffer);
+	alSourcei(source, AL_BUFFER, buffer);
 	//pour boucler un son
-	alSourcei(uiSource, AL_LOOPING, 1);
+	alSourcei(source, AL_LOOPING, 1);
 	// Play Source
-	alSourcePlay(uiSource);
-}
-
-void NeuveurTrante::OnStop(System::Object^ sender, System::EventArgs^ e) {
-	alSourceStop(source);
-}
-
-void NeuveurTrante::OnPause(System::Object^ sender, System::EventArgs^ e) {
-	alSourcePause(source);
-}
-
-void NeuveurTrante::OnResume(System::Object^ sender, System::EventArgs^ e) {
 	alSourcePlay(source);
 }
 
-void NeuveurTrante::OnVolumeChange(System::Object^ sender, System::EventArgs^ e) {
+void NeuveurTrante::OnStop(System::Object^ sender, System::EventArgs^ e) 
+{
+	ALint state;
+	alGetSourcei(source, AL_SOURCE_STATE, &state);
+
+	if (state == AL_PLAYING || state == AL_PAUSED) 
+	{
+		alSourceStop(source);
+		alSourceRewind(source); // Remet la lecture au début
+	}
+	else {
+		MessageBox::Show("Aucun son à arrêter.");
+	}
+}
+
+
+void NeuveurTrante::OnPause(System::Object^ sender, System::EventArgs^ e) 
+{
+	ALint state;
+	alGetSourcei(source, AL_SOURCE_STATE, &state);
+
+	if (state == AL_PLAYING) 
+	{
+		alSourcePause(source);
+	}
+	else {
+		MessageBox::Show("Aucun son en cours de lecture.");
+	}
+}
+
+
+void NeuveurTrante::OnResume(System::Object^ sender, System::EventArgs^ e) 
+{
+	ALint state;
+	alGetSourcei(source, AL_SOURCE_STATE, &state);
+
+	if (state == AL_PAUSED) 
+	{ 
+		alSourcePlay(source);
+	}
+	else {
+		MessageBox::Show("Impossible de reprendre, la source n'est pas en pause.");
+	}
+}
+
+
+void NeuveurTrante::OnVolumeChange(System::Object^ sender, System::EventArgs^ e) 
+{
 	volume = volumeTrackBar->Value / 100.0f;  // Convertir la valeur du trackbar en un pourcentage (0.0 - 1.0)
 	alSourcef(source, AL_GAIN, volume);  // Appliquer la modification du volume
 }
 
 void NeuveurTrante::OnAddFile(System::Object^ sender, System::EventArgs^ e) {
-	// Ouvrir une boîte de dialogue pour ajouter un fichier à la playlist
-	OpenFileDialog^ openFileDialog = gcnew OpenFileDialog();
-	openFileDialog->Filter = "Audio Files|*.wav;*.ogg|All Files|*.*";
-	if (openFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK) {
-		std::string filePath = SysStringToStd(openFileDialog->FileName);
+	OpenFileDialog^ dialog = gcnew OpenFileDialog();
+	dialog->Filter = "Audio Files (*.wav;*.ogg)|*.wav;*.ogg";
+	dialog->Title = "Sélectionnez un fichier audio";
+
+	if (dialog->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+	{
+		std::string filePath = SysStringToStd(dialog->FileName);
+		ALuint tempBuffer;
+
+		// Charger le fichier audio selon son extension
+		if (EndsWith(filePath, ".wav")) {
+			if (!LoadWavFile(filePath, tempBuffer)) {
+				MessageBox::Show("Erreur de chargement du fichier WAV.");
+				return;
+			}
+		}
+		/*else if (EndsWith(filePath, ".ogg")) {
+			if (!LoadOggFile(filePath, tempBuffer)) {
+				MessageBox::Show("Erreur de chargement du fichier OGG.");
+				return;
+			}
+		}*/
+		else {
+			MessageBox::Show("Format non supporté.");
+			return;
+		}
+
+		// Ajouter le fichier valide à la playlist
 		playlist.push_back(filePath);
-		playlistBox->Items->Add(openFileDialog->FileName);
+		playlistBox->Items->Add(dialog->FileName);
 	}
 }
 
-void NeuveurTrante::OnRemoveFile(System::Object^ sender, System::EventArgs^ e) {
+
+
+void NeuveurTrante::OnRemoveFile(System::Object^ sender, System::EventArgs^ e) 
+{
 	// Supprimer un fichier sélectionné de la playlist
-	if (playlistBox->SelectedItem) {
+	if (playlistBox->SelectedItem) 
+	{
 		std::string filePath = SysStringToStd(playlistBox->SelectedItem->ToString());
 		playlist.erase(std::remove(playlist.begin(), playlist.end(), filePath), playlist.end());
 		playlistBox->Items->Remove(playlistBox->SelectedItem);
 	}
 }
 
-void NeuveurTrante::OnSavePlaylist(System::Object^ sender, System::EventArgs^ e) {
+void NeuveurTrante::OnSavePlaylist(System::Object^ sender, System::EventArgs^ e) 
+{
 	// Enregistrer la playlist dans un fichier
 	SaveFileDialog^ saveFileDialog = gcnew SaveFileDialog();
 	saveFileDialog->Filter = "Text Files|*.txt|All Files|*.*";
-	if (saveFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK) {
+	if (saveFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK) 
+	{
 		std::ofstream outFile(SysStringToStd(saveFileDialog->FileName));
-		for (const std::string& file : playlist) {
+		for (const std::string& file : playlist) 
+		{
 			outFile << file << std::endl;
 		}
 		outFile.close();
 	}
 }
 
-void NeuveurTrante::OnLoadPlayList(System::Object^ sender, System::EventArgs^ e) {
+void NeuveurTrante::OnLoadPlayList(System::Object^ sender, System::EventArgs^ e) 
+{
 	// Charger la playlist à partir d'un fichier
 	OpenFileDialog^ openFileDialog = gcnew OpenFileDialog();
 	openFileDialog->Filter = "Text Files|*.txt|All Files|*.*";
-	if (openFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK) {
+	if (openFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK) 
+	{
 		std::ifstream inFile(SysStringToStd(openFileDialog->FileName));
 		playlist.clear();
 		playlistBox->Items->Clear();
 		std::string line;
-		while (std::getline(inFile, line)) {
+		while (std::getline(inFile, line)) 
+		{
 			playlist.push_back(line);
 			playlistBox->Items->Add(gcnew System::String(line.c_str()));
 		}
@@ -184,6 +261,11 @@ void NeuveurTrante::OnLoadPlayList(System::Object^ sender, System::EventArgs^ e)
 }
 
 
+bool NeuveurTrante::EndsWith(const std::string& str, const std::string& suffix) 
+{
+	if (str.size() < suffix.size()) return false;
+	return str.compare(str.size() - suffix.size(), suffix.size(), suffix) == 0;
+}
 
 // Nettoyer OpenAL à la fermeture de l'application
 void NeuveurTrante::CleanupOpenAL() {

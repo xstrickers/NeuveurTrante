@@ -1,11 +1,10 @@
 ﻿  MyForm.cpp
-C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\MyForm.cpp(97,14): warning C4101: 'iState': unreferenced local variable
-C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\MyForm.h(24): warning C4715: 'init': not all control paths return a value
-  aldlist.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-MyForm.obj : warning LNK4248: unresolved typeref token (01000026) for 'ALCdevice_struct'; image may not run
-Framework.obj : warning LNK4248: unresolved typeref token (0100001C) for 'ALCdevice_struct'; image may not run
-aldlist.obj : warning LNK4248: unresolved typeref token (0100001B) for 'ALCdevice_struct'; image may not run
-MyForm.obj : warning LNK4248: unresolved typeref token (0100002C) for 'ALCcontext_struct'; image may not run
-Framework.obj : warning LNK4248: unresolved typeref token (0100001B) for 'ALCcontext_struct'; image may not run
-aldlist.obj : warning LNK4248: unresolved typeref token (0100001C) for 'ALCcontext_struct'; image may not run
-  NeuveurTrante.vcxproj -> C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\Debug\NeuveurTrante.exe
+D:\Etudes\Creajeux\Quatrieme_Annee\Eleve\Tools\NeuveurTrante\NeuveurTrante\MyForm.h(24,1): warning C4715: 'init' : les chemins de contrôle ne retournent pas tous une valeur
+  aldlist.obj : module MSIL détecté ; liens incrémentiels désactivés pour MSIL ; édition de liens complète en cours
+MyForm.obj : warning LNK4248: jeton typeref non résolu (01000026) pour 'ALCdevice_struct' ; l'image risque de ne pas s'exécuter
+Framework.obj : warning LNK4248: jeton typeref non résolu (0100001C) pour 'ALCdevice_struct' ; l'image risque de ne pas s'exécuter
+aldlist.obj : warning LNK4248: jeton typeref non résolu (0100001B) pour 'ALCdevice_struct' ; l'image risque de ne pas s'exécuter
+MyForm.obj : warning LNK4248: jeton typeref non résolu (0100002E) pour 'ALCcontext_struct' ; l'image risque de ne pas s'exécuter
+Framework.obj : warning LNK4248: jeton typeref non résolu (0100001B) pour 'ALCcontext_struct' ; l'image risque de ne pas s'exécuter
+aldlist.obj : warning LNK4248: jeton typeref non résolu (0100001C) pour 'ALCcontext_struct' ; l'image risque de ne pas s'exécuter
+  NeuveurTrante.vcxproj -> D:\Etudes\Creajeux\Quatrieme_Annee\Eleve\Tools\NeuveurTrante\Debug\NeuveurTrante.exe
