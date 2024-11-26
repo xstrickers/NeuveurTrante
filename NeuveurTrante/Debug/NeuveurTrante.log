@@ -1,23 +1,10 @@
-﻿  aldlist.cpp
-C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\framework\Win32\aldlist.cpp(42,19): warning C4858: discarding return value: This member function returns a bool indicating whether the container is empty and has no other effects. It is not useful to call this member function and discard the return value. Use the 'clear()' member function if you want to erase all elements.
-C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\framework\Win32\aldlist.cpp(133,41): warning C4858: discarding return value: This member function returns a bool indicating whether the container is empty and has no other effects. It is not useful to call this member function and discard the return value. Use the 'clear()' member function if you want to erase all elements.
-C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\framework\Win32\aldlist.cpp(138,19): warning C4858: discarding return value: This member function returns a bool indicating whether the container is empty and has no other effects. It is not useful to call this member function and discard the return value. Use the 'clear()' member function if you want to erase all elements.
-  CWaves.cpp
-  Framework.cpp
-C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\framework\Win32\Framework.cpp(210,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  LoadOAL.cpp
-  MyForm.cpp
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  Generating Code...
-C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\framework\Win32\Framework.cpp(200): warning C4793: 'ALFWprintf': function compiled as native:
-  	varargs not supported under /clr
-C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\framework\Win32\Framework.cpp(202): warning C4793: 'ALFWprintf': function compiled as native:
-  	Found an intrinsic not supported in managed code
-C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\framework\Win32\Framework.cpp(204): warning C4793: 'ALFWprintf': function compiled as native:
-  	Found an intrinsic not supported in managed code
+﻿  MyForm.cpp
+C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\MyForm.h(24): warning C4715: 'init': not all control paths return a value
   aldlist.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+MyForm.obj : warning LNK4248: unresolved typeref token (01000026) for 'ALCdevice_struct'; image may not run
 Framework.obj : warning LNK4248: unresolved typeref token (0100001C) for 'ALCdevice_struct'; image may not run
 aldlist.obj : warning LNK4248: unresolved typeref token (0100001B) for 'ALCdevice_struct'; image may not run
+MyForm.obj : warning LNK4248: unresolved typeref token (0100002C) for 'ALCcontext_struct'; image may not run
 Framework.obj : warning LNK4248: unresolved typeref token (0100001B) for 'ALCcontext_struct'; image may not run
 aldlist.obj : warning LNK4248: unresolved typeref token (0100001C) for 'ALCcontext_struct'; image may not run
   NeuveurTrante.vcxproj -> C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\Debug\NeuveurTrante.exe
