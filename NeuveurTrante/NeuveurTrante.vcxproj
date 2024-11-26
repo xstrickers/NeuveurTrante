@@ -87,10 +87,10 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\include;C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\framework\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Framework\Win32;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>winmm.lib;libs\win32\OpenAL32.lib;%(Additional Dependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>winmm.lib;libs\win32\OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
@@ -121,10 +121,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\samples\framework\Win32\aldlist.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\samples\framework\Win32\CWaves.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\samples\framework\Win32\Framework.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\samples\framework\Win32\LoadOAL.cpp" />
     <ClCompile Include="framework\Win32\aldlist.cpp" />
     <ClCompile Include="framework\Win32\CWaves.cpp" />
     <ClCompile Include="framework\Win32\Framework.cpp" />
@@ -132,10 +128,6 @@
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\samples\framework\Win32\aldlist.h" />
-    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\samples\framework\Win32\CWaves.h" />
-    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\samples\framework\Win32\Framework.h" />
-    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\OpenAL 1.1 SDK\samples\framework\Win32\LoadOAL.h" />
     <ClInclude Include="framework\Win32\aldlist.h" />
     <ClInclude Include="framework\Win32\CWaves.h" />
     <ClInclude Include="framework\Win32\Framework.h" />
@@ -143,6 +135,11 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

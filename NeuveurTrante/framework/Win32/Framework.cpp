@@ -117,13 +117,14 @@ ALboolean ALFWInitOpenAL()
 		ALFWprintf("\nSelect OpenAL Device:\n");
 		for (i = 0; i < pDeviceList->GetNumDevices(); i++) 
 			ALFWprintf("%d. %s%s\n", i + 1, pDeviceList->GetDeviceName(i), i == pDeviceList->GetDefaultDevice() ? "(DEFAULT)" : "");
-	
+	/*
 		do {
-			ALchar ch = _getch();
+			//ALchar ch = _getch();
+			ALchar ch = 0;
 			i = atoi(&ch);
 		} while ((i < 1) || (i > pDeviceList->GetNumDevices()));
-
-		pDevice = alcOpenDevice(pDeviceList->GetDeviceName(i - 1));
+		*/
+		pDevice = alcOpenDevice(pDeviceList->GetDeviceName(0));
 		if (pDevice)
 		{
 			pContext = alcCreateContext(pDevice, NULL);
@@ -206,7 +207,7 @@ void ALFWprintf( const char* x, ... )
 ALchar fullPath[_MAX_PATH];
 ALchar *ALFWaddMediaPath(const ALchar *filename)
 {
-	sprintf(fullPath, "%s%s", "..\\..\\Media\\", filename);
+	sprintf(fullPath, "%s%s", "Media\\", filename);
 	return fullPath;
 }
 
