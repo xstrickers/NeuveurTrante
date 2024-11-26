@@ -1,4 +1,5 @@
 ﻿  MyForm.cpp
+C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\MyForm.cpp(97,14): warning C4101: 'iState': unreferenced local variable
 C:\Users\Etudiant1\Documents\GitHub\NeuveurTrante\NeuveurTrante\MyForm.h(24): warning C4715: 'init': not all control paths return a value
   aldlist.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
 MyForm.obj : warning LNK4248: unresolved typeref token (01000026) for 'ALCdevice_struct'; image may not run
