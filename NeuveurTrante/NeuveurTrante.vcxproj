@@ -126,6 +126,7 @@
     <ClCompile Include="framework\Win32\Framework.cpp" />
     <ClCompile Include="framework\Win32\LoadOAL.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="PlayOggVorbis.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework\Win32\aldlist.h" />
