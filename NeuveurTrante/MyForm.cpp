@@ -35,20 +35,6 @@ std::string NeuveurTrante::SysStringToStd(System::String^ sysString)
 	return stdString;
 }
 
-// Initialisation d'OpenAL
-//void InitializeOpenAL() {
-//	device = alcOpenDevice(nullptr); // Périphérique par défaut
-//	if (!device) {
-//		MessageBox::Show("Impossible d'ouvrir le périphérique OpenAL.");
-//		return;
-//	}
-//	context = alcCreateContext(device, nullptr);
-//	if (!alcMakeContextCurrent(context)) {
-//		MessageBox::Show("Impossible de définir le contexte OpenAL.");
-//		return;
-//	}
-//	alGenSources(1, &source);
-//}
 
 // Nettoyage des ressources OpenAL
 void CleanupOpenAL() 
@@ -63,36 +49,18 @@ void CleanupOpenAL()
 // Charger un fichier WAV dans un buffer OpenAL
 bool NeuveurTrante::LoadWavFile(const std::string& filename, ALuint& buffer) 
 {
-	// Vous devez ajouter la logique pour charger un fichier WAV ici
-	// Ce code est un exemple générique et ne contient pas la logique de chargement du fichier
+
 	std::ifstream file(filename, std::ios::binary);
 	if (!file.is_open()) {
 		return false;
 	}
-	// Code pour charger un fichier WAV dans un buffer OpenAL
-	// Vous devrez probablement utiliser une bibliothèque comme stb_vorbis pour le décodage
-	// ou implémenter votre propre logique ici
+
 
 	file.close();
 	return true;
 }
 
-// Charger un fichier OGG
-//bool NeuveurTrante::LoadOggFile(const std::string& filename, ALuint& buffer) 
-//{
-//	int channels, sampleRate;
-//	short* output;
-//	int samples = stb_vorbis_decode_filename(filename.c_str(), &channels, &sampleRate, &output);
-//	if (samples < 0) {
-//		return false;
-//	}
-//
-//	alGenBuffers(1, &buffer);
-//	alBufferData(buffer, (channels == 1) ? AL_FORMAT_MONO16 : AL_FORMAT_STEREO16, output,
-//		samples * sizeof(short), sampleRate);
-//	free(output);
-//	return true;
-//}
+
 
 void NeuveurTrante::OnPlay(System::Object^ sender, System::EventArgs^ e) 
 {
